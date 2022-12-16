@@ -1,0 +1,17 @@
+The code creates a simple tic-tac-toe game using the Flutter framework.
+
+The main() function creates a TicTacToeApp widget, which is a MaterialApp with a title of "Tic Tac Toe" and a home page of TicTacToeHomePage.
+
+TicTacToeHomePage is a StatefulWidget that creates a _TicTacToeHomePageState object in its createState() method. This state object holds the current state of the game, including the game board and the current player.
+
+The initState() method is called when the state is first created, and it initializes the board and the current player. The _resetBoard() method is used to reset the board and current player to their starting values.
+
+The _playMove() method is called whenever a player taps on a cell on the game board. It updates the board with the current player's move and switches to the next player's turn.
+
+The _buildBoard() method creates the game board UI by creating a 3x3 grid of RaisedButton widgets. Each button displays the current value of the corresponding cell on the game board and calls _playMove() when tapped.
+
+The build() method of _TicTacToeHomePageState returns a Scaffold that contains the game board and a FloatingActionButton to reset the game.
+
+
+
+
